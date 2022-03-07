@@ -1,0 +1,39 @@
+.TodoApp {
+  color: black;
+  /* font-size: 35px; */
+}
+body {
+  background-image: url("https://media.istockphoto.com/photos/pastel-coloured-paper-background-picture-id854577264?b=1&k=20&m=854577264&s=170667a&w=0&h=xIm1uF5n1-20hReVLCMyUY_Yi4-hnclBhgw_N41wQV4=");
+}
+table{
+    width: 50%;
+}
+ td {
+    border:1px solid black;
+  }
+  tr{
+    margin-bottom: 10px;
+
+  }
+  .butt{
+      width: 100px;
+  }
+.eachItem {
+  display: flex;
+  color: black;
+  justify-content: center;
+}
+.eachItem button{
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 100px;
+    height: 20px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.show {
+  margin: auto;
+  text-align: center;
+}
