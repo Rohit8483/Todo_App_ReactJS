@@ -1,6 +1,9 @@
 const init = {
   list: [],
 };
+const init1 = {
+  mode: false,
+};
 
 export const TodoReducer = (state = init, action) => {
   switch (action.type) {
@@ -22,13 +25,24 @@ export const TodoReducer = (state = init, action) => {
         ...state,
         list: newList,
       };
+    case "REMOVE_TODO":
+      return {
+        ...state,
+        list: [],
+      };
 
-      case "REMOVE_TODO":
-        return {
-          ...state,
-          list: [],
-        };
+    default:
+      return state;
+  }
+};
 
+export const DarkModereducer = (state = init1, action) => {
+  switch (action.type) {
+    case "TOGGLE_DARK_MODE":
+      return {
+        ...state,
+        mode: !state.mode,
+      };
     default:
       return state;
   }

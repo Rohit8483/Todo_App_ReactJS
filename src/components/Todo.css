@@ -2,38 +2,61 @@
   color: black;
   /* font-size: 35px; */
 }
-body {
-  background-image: url("https://media.istockphoto.com/photos/pastel-coloured-paper-background-picture-id854577264?b=1&k=20&m=854577264&s=170667a&w=0&h=xIm1uF5n1-20hReVLCMyUY_Yi4-hnclBhgw_N41wQV4=");
+table {
+  width: 70%;
 }
-table{
-    width: 50%;
+td {
+  border: 1px solid black;
 }
- td {
-    border:1px solid black;
-  }
-  tr{
-    margin-bottom: 10px;
-
-  }
-  .butt{
-      width: 100px;
-  }
+tr {
+  margin-bottom: 10px;
+}
+.butt {
+  width: 100px;
+}
 .eachItem {
   display: flex;
   color: black;
   justify-content: center;
 }
-.eachItem button{
-    background-color: black;
-    color: white;
-    display: flex;
-    width: 100px;
-    height: 20px;
-    justify-items: center;
-    justify-content: center;
+.eachItem button {
+  background-color: black;
+  color: white;
+  display: flex;
+  width: 100px;
+  height: 20px;
+  justify-items: center;
+  justify-content: center;
+}
+.appContainer {
+  text-align: center;
+}
+/* .additems {
+  display: flex;
+  justify-content: center;
+} */
+.addItems{
+  margin-bottom: 4%;
+}
+.addItems > input {
+  padding: 10px;
+  width: 40%;
+  font-size: large;
+  border-radius: 20%;
+  margin-right: 2%;
+}
+.addItems > button {
+  padding: 10px;
+  width: 15%;
+  border-radius: 20%;
+  justify-content: space-between;
+  margin-right: 2%;
 }
 
 .show {
   margin: auto;
   text-align: center;
+}
+.srNo {
+  width: 2%;
 }

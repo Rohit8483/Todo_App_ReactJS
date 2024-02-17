@@ -1,0 +1,15 @@
+.navbarContainer {
+  border: 1px solid red;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navHeading {
+  text-align: center;
+  flex-grow: 1;
+}
+.reactIcon {
+  text-align: center;
+  size: large;
+}
