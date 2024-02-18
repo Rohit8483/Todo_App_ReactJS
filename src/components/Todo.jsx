@@ -7,6 +7,7 @@ export const Todo = () => {
   const [inputData, setInputData] = useState("");
   const dispatch = useDispatch();
   const list = useSelector((state) => state.TodoReducer.list);
+  const toggeledvalueOfMode=useSelector(state=>state.DarkModereducer.mode)
 
   const handleClickToAdd = () => {
     if (inputData.trim() !== "") {
@@ -33,7 +34,7 @@ export const Todo = () => {
       <h1>Todo App</h1>
       <div className="addItems">
         <input
-          placeholder="add your todo"
+          placeholder="Add your todo..."
           value={inputData}
           onChange={(e) => setInputData(e.target.value)}
           onKeyPress={handleEnterKey}
@@ -48,11 +49,12 @@ export const Todo = () => {
         {list.map((e) => {
           return (
             <div className="eachItem" key={e.id}>
-              <table>
+              <table className={toggeledvalueOfMode ===false ? "tableLightMode" : "tableDarkMode"}>
                 <tbody>
                   <tr>
-                    <td>
-                      <p> {e.data}</p>
+                    <td className="tdWithCheckbox">
+                      <input type="checkbox" />
+                      <p>{e.data}</p>
                     </td>
                     <td className="butt">
                       <button
@@ -63,7 +65,6 @@ export const Todo = () => {
                         delete
                       </button>
                     </td>
-                    <td className="butt">hi</td>
                   </tr>
                 </tbody>
               </table>

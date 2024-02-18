@@ -1,5 +1,5 @@
 .navbarContainer {
-  border: 1px solid red;
+  border-bottom: 5px solid white;
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -8,6 +8,7 @@
 .navHeading {
   text-align: center;
   flex-grow: 1;
+  font-weight: 500;
 }
 .reactIcon {
   text-align: center;

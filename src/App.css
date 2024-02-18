@@ -7,6 +7,7 @@
   color: beige;
 }
 .lightMode{
-  background-color: yellow;
+  background: url('../public/assets/lightMode.png') no-repeat fixed center;
+  background-size: cover;
   color: black;
 }

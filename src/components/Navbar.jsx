@@ -20,7 +20,7 @@ const Navbar = () => {
           {isModeDark === false ? <MdOutlineLightMode /> : <MdDarkMode />}
         </div>
         <button onClick={handleMode}>
-          {isModeDark === true ? "dark Mode" : "Light Mode"}
+          {isModeDark === false ? "dark Mode" : "Light Mode"}
         </button>
       </div>
     </div>

@@ -2,8 +2,13 @@
   color: black;
   /* font-size: 35px; */
 }
-table {
+table{
   width: 70%;
+
+}
+.tableDarkMode {
+  color: beige;
+  border: 1px solid white;
 }
 td {
   border: 1px solid black;
@@ -22,19 +27,19 @@ tr {
 .eachItem button {
   background-color: black;
   color: white;
-  display: flex;
-  width: 100px;
+  width: 60px;
   height: 20px;
   justify-items: center;
   justify-content: center;
 }
+.eachItem button:hover{
+  width: 70px;
+  height: 25px;
+  cursor: pointer;
+}
 .appContainer {
   text-align: center;
 }
-/* .additems {
-  display: flex;
-  justify-content: center;
-} */
 .addItems{
   margin-bottom: 4%;
 }
@@ -52,11 +57,15 @@ tr {
   justify-content: space-between;
   margin-right: 2%;
 }
-
 .show {
   margin: auto;
   text-align: center;
 }
-.srNo {
-  width: 2%;
+.tdWithCheckbox{
+  display: flex;
+}
+.tdWithCheckbox input{
+  margin: 2%;
+  width: 20px;
+  cursor: pointer;
 }
